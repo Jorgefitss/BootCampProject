@@ -17,10 +17,10 @@ public class CustomerApplication implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		logger.debug("Debug de la aplicacion");
-		logger.info("Info log");
-		logger.warn(" Este es una alerta");
-		logger.error("Opss este es un error");
-		logger.fatal("Error corrigime");
+		logger.debug("Debug de la aplicación");
+		logger.info("Info Log");
+		logger.warn("Warning");
+		logger.error("Error");
+		logger.fatal("Fatal Error");
 	}
 }

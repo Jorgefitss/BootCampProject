@@ -13,10 +13,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Document
 
-public class Customer {
+public class Account {
     @Id
     int id;
     private String name;
-    private String lastname;
-    private int type;
+    private TypeAccount typeAccount;
+
+
 }

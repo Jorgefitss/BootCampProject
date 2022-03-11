@@ -5,10 +5,10 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 
-
 public interface AccountService {
+    Mono<Account> create(Account a);
+    Mono<Account> findById(Integer id);
     Flux<Account> findAll();
-    Mono<Account> findById(String id);
-    Flux<Account> findByCustomName(String name);
-    Mono<Account> delete(String id);
+    Mono<Account> update(Account a);
+    Mono<Void> delete(Integer id);
 }
