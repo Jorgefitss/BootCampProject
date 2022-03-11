@@ -7,5 +7,5 @@ import org.springframework.web.reactive.config.WebFluxConfigurer;
 @EnableWebFlux
 @Configuration
 
-public class WebfluxApplication implements WebFluxConfigurer {
+public class WebFluxApplication implements WebFluxConfigurer {
 }
