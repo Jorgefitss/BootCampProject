@@ -1,2 +1,4 @@
-package com.nttdata.Accountt.Controller;public class AccountController {
+package com.nttdata.Accountt.Controller;
+
+public class AccountController {
 }
