@@ -1,9 +1,10 @@
-package com.nttdata.Proj1.Modelo;
+package com.nttdata.Customer.Modelo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -12,6 +13,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Document
 
-public class CustomerType {
-
+public class Customer {
+    @Id
+    int id;
+    private String name;
+    private String lastname;
+    private Object products;
+    private String typeCustom;
 }
