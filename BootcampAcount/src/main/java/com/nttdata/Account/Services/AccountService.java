@@ -1,6 +1,6 @@
-package com.nttdata.Accountt.Services;
+package com.nttdata.Account.Services;
 
-import com.nttdata.Accountt.Modelo.Account;
+import com.nttdata.Account.Modelo.Account;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

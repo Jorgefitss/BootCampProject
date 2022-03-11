@@ -1,4 +1,4 @@
-package com.nttdata.Accountt.Modelo;
+package com.nttdata.Account.Modelo;
 
 
 public enum TypeAccount {

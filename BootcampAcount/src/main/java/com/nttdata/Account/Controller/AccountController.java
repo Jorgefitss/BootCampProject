@@ -1,8 +1,8 @@
-package com.nttdata.Accountt.Controller;
+package com.nttdata.Account.Controller;
 
 
-import com.nttdata.Accountt.Modelo.Account;
-import com.nttdata.Accountt.Services.AccountService;
+import com.nttdata.Account.Modelo.Account;
+import com.nttdata.Account.Services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

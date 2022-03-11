@@ -1,7 +1,7 @@
-package com.nttdata.Accountt.Services;
+package com.nttdata.Account.Services;
 
-import com.nttdata.Accountt.Modelo.Account;
-import com.nttdata.Accountt.Repository.AccountRepository;
+import com.nttdata.Account.Modelo.Account;
+import com.nttdata.Account.Repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
