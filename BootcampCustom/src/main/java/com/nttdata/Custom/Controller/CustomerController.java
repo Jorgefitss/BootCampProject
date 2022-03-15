@@ -1,7 +1,7 @@
-package com.nttdata.Customer.Controller;
+package com.nttdata.Custom.Controller;
 
-import com.nttdata.Customer.Modelo.Customer;
-import com.nttdata.Customer.Services.CustomerServices;
+import com.nttdata.Custom.Modelo.Customer;
+import com.nttdata.Custom.Services.CustomerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -11,7 +11,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/custom")
+//@RequestMapping("/custom")
 public class CustomerController {
 
     @Autowired
@@ -19,13 +19,14 @@ public class CustomerController {
 
     @PostMapping("/create/custom")
     @ResponseStatus(HttpStatus.CREATED)
-    public void createCustom(@RequestBody Customer customer){
-        customerServices.createCustom(customer);
+    public Mono<Customer> customerServices(@RequestBody Customer customer){
+        return customerServices.createCustom(customer);
     }
 
     @GetMapping(value = "/get/all",produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     @ResponseBody
     public Flux<Customer> findAllCustom(){
+
         return customerServices.findAllCustom();
     }
 
@@ -46,6 +47,7 @@ public class CustomerController {
     @DeleteMapping("/delete/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public Mono<Void> deleteCustom(@PathVariable("id") Integer id){
+
         return customerServices.deleteCustom(id);
     }
 

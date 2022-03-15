@@ -1,4 +1,4 @@
-package com.nttdata.Customer.Modelo;
+package com.nttdata.Custom.Modelo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document
+@Document("customer")
 
 public class Customer {
     @Id

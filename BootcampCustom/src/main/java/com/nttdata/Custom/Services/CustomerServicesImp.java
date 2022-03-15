@@ -1,7 +1,7 @@
-package com.nttdata.Customer.Services;
+package com.nttdata.Custom.Services;
 
-import com.nttdata.Customer.Modelo.Customer;
-import com.nttdata.Customer.Repository.CustomerRepository;
+import com.nttdata.Custom.Modelo.Customer;
+import com.nttdata.Custom.Repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

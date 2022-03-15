@@ -1,6 +1,6 @@
-package com.nttdata.Customer.Services;
+package com.nttdata.Custom.Services;
 
-import com.nttdata.Customer.Modelo.Customer;
+import com.nttdata.Custom.Modelo.Customer;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

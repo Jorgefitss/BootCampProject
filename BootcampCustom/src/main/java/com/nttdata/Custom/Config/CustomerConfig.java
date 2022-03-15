@@ -1,4 +1,4 @@
-package com.nttdata.Customer.Config;
+package com.nttdata.Custom.Config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.config.EnableWebFlux;

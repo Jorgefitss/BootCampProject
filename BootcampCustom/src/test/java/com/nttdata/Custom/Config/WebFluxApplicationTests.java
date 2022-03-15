@@ -1,13 +1,13 @@
-package com.nttdata.Account.Config;
+package com.nttdata.Custom.Config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebfluxApplicationTests {
+class WebFluxApplicationTests {
 
 	@Test
-	void contextLoads() {
+	  void contextLoads() {
 	}
 
 }
